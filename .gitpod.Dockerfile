@@ -1,5 +1,6 @@
 FROM gitpod/workspace-postgres
 
+USER gitpod
+
 RUN sudo apt update \
- && sudo apt upgrade -y \
  && sudo apt install -y protobuf-compiler
