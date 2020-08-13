@@ -1,3 +1,5 @@
 image:
   file: .gitpod.Dockerfile
-  # apt install -y protobuf-compiler
+
+tasks:
+  - init: dep ensure && go get -u github.com/golang/protobuf/protoc-gen-go && go get github.com/infobloxopen/protoc-gen-gorm
