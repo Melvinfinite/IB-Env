@@ -2,7 +2,4 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: sudo go get -u github.com/golang/dep/cmd/dep \ 
-  && dep ensure \
-  && sudo go get -u github.com/golang/protobuf/protoc-gen-go \
-  && sudo go get github.com/infobloxopen/protoc-gen-gorm
+  - init: sudo go get -u github.com/golang/dep/cmd/dep && dep ensure && sudo go get -u github.com/golang/protobuf/protoc-gen-go && sudo go get github.com/infobloxopen/protoc-gen-gorm
