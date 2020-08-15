@@ -6,6 +6,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install go-dep
 RUN GO111MODULE=on go get -u -v github.com/golang/protobuf/protoc-gen-go 
 RUN sudo apt-get install -y protobuf-compiler
+RUN dep init
 RUN dep ensure
 RUN GO111MODULE=on go get -u -v github.com/infobloxopen/protoc-gen-gorm
 
