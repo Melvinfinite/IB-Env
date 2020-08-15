@@ -1,4 +1,4 @@
-FROM gitpod/workspace-golang
+FROM thetobsecret/workspace-golang:latest
 
 USER gitpod
 
