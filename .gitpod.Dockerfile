@@ -2,6 +2,8 @@ FROM thetobsecret/workspace-golang:latest
 
 USER gitpod
 
+ENV GOPATH=/home/gitpod/go/
+
 RUN sudo apt-get update
 RUN sudo apt-get install go-dep
 RUN go get -u -v github.com/golang/protobuf/protoc-gen-go 
