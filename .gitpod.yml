@@ -1,12 +1,2 @@
 image:
   file: .gitpod.Dockerfile
-
-tasks:
-  - init: sudo go get -u github.com/golang/protobuf/protoc-gen-go
-  - init: sudo go get github.com/infobloxopen/protoc-gen-gorm
-  - init: sudo apt update
-  - init: sudo apt install -y apt-utils
-  - init: sudo apt install -y golang
-  - init: sudo apt install -y protobuf-compiler
-  - init: sudo apt install -y go-dep
-  - init: dep ensure
