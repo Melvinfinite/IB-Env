@@ -2,9 +2,9 @@ FROM thetobsecret/workspace-golang:latest
 
 USER gitpod
 
-RUN apt-get update \
+RUN sudo apt-get update \
   && go get -u -v github.com/golang/protobuf/protoc-gen-go \
-  && apt-get install -y protobuf-compiler \
+  && sudo apt-get install -y protobuf-compiler \
   && go get -u -v github.com/infobloxopen/protoc-gen-gorm
 
 # Install PostgreSQL
