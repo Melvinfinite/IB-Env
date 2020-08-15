@@ -9,5 +9,6 @@ RUN sudo apt update \
   && sudo go get -u github.com/golang/protobuf/protoc-gen-go \
   && sudo apt install -y protobuf-compiler \
   && sudo apt install -y go-dep \
-  && dep ensure \
+  && sudo dep init \
+  && sudo dep ensure \
   && sudo go get -u github.com/infobloxopen/protoc-gen-gorm
