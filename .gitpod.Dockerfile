@@ -5,7 +5,7 @@ USER gitpod
 RUN sudo apt-get update 
 RUN go get -u -v github.com/golang/protobuf/protoc-gen-go 
 RUN sudo apt-get install -y protobuf-compiler
-RUN go get -u -v github.com/infobloxopen/protoc-gen-gorm
+RUN GO111MODULE=on go get -u -v github.com/infobloxopen/protoc-gen-gorm
 
 # Install PostgreSQL
 RUN sudo apt-get install -y -q postgresql-12 postgresql-contrib-12
